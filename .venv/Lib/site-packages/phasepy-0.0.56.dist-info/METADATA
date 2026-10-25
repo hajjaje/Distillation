@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: phasepy
+Version: 0.0.56
+Summary: Multiphase multicomponent Equilibria
+Author: Andres Mejia Matallana
+Author-email: Gustavo Chaparro <gchaparro@ethz.ch>
+License: MIT
+Project-URL: Homepage, https://github.com/gustavochm/phasepy
+Project-URL: Download, https://github.com/gustavochm/phasepy.git
+Keywords: Phase Equilibrium,Cubic EOS,QMR,MHV,WS,NRTL,Wilson,UNIFAC,UNIQUAC,Flash,VLE,LLE,VLLE,SGT
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: scipy>=1.13
+Requires-Dist: pandas>=2.2
+Requires-Dist: openpyxl>=3.0.0
+Provides-Extra: dev
+Requires-Dist: cython>=3.0; extra == "dev"
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Dynamic: license-file
+
+Phasepy is an open-source scientific python package for fluid phase equilibria computation.
+This package facilitates the calculation of liquid-vapor equilibrium, liquid-liquid equilibrium
+and liquid-liquid-vapor equilibrium. Equilibrium calculations can be performed with cubic equations
+of state with classic or advances mixing rules or with a discontinuous approach using a virial equation
+of state for the vapor phase and an activity coefficients model for the liquid phase.
+
+Besides computations, with this package is also possible to fit phase equilibria data, functions to fit quadratic
+mix rule, NRTL, Wilson and Redlich Kister parameters, are included.
+
+Phasepy relies on numpy, scipy and cython extension modules, when necessary.
